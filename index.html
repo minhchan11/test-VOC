@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script
+   src="https://code.jquery.com/jquery-3.2.1.js"
+   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+   crossorigin="anonymous"></script>
+   <script type="text/javascript" src="scripts.js"></script>
+    <title>VOC calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="jumbotron">VOC calculator</h1>
+      <div class="panel panel-success">
+      <div class="panel-heading">Calculator</div>
+      <div class="panel-body">
+        <form id="testForm">
+        <div class="form-group">
+            <label for="percentCar">Percent Contribution for Passenger Cars:</label>
+            <input type="number" id="percentCar" name="percentCar" value="" class="form-control">
+            <label for="percentSUTruck">Percent Contribution for Single Unit Trucks:</label>
+            <input type="number" id="percentSUTruck" name="percentSUTruck" value="" class="form-control">
+            <label for="percentCTruck">Percent Contribution for Combination Trucks:</label>
+            <input type="number" id="percentCTruck" name="percentCTruck" value="" class="form-control">
+            <label for="initial">Initial Speed for all categories</label>
+            <input type="number" id="initial" class="form-control">
+            <label for="reduce">Reduce Speed for all categories</label>
+            <input type="number" id="reduce" class="form-control">
+        </div>
+          <button type="submit" name="button" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="panel panel-info">
+      <div class="panel-heading">Results</div>
+      <h5>Calculation results</h5>
+      <h6>Added VOC total affected is <span id="resultTotal"></span></h6>
+      <h6>Added VOC passenger vehicles is <span id="resultCar"></span></h6>
+      <h6>Added VOC SU truck is <span id="resultSUTruck"></span></h6>
+      <h6>Added VOC Combination truck is <span id="resultCTruck"></span></h6>
+      <h6>Added VOC Total per day is <span id="resultDay"></span></h6>
+      <h6>Added VOC 60 day span is <span id="resultMonth"></span></h6>
+    </div>
+    </div>
+  </body>
+</html>
