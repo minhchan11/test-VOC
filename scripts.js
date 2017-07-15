@@ -36,6 +36,7 @@ $(document).ready(function(){
     var differenceCar = parseFloat((initialSpeedCar - reduceSpeedCar).toFixed(2));
     var weightedCostCar = parseFloat((differenceCar*percentCar/100).toFixed(2));
 
+    ((findCost(initialSpeed,dataCar) - findCost(reduceSpeed,dataCar))*(parseFloat(passengerVehicles/totalAffected))).toFixed(2);
     //calculation for SUTrucks
     var initialSpeedSUTruck = findCost(initialSpeed,dataSUTruck);
     var reduceSpeedSUTruck = findCost(reduceSpeed,dataSUTruck);
